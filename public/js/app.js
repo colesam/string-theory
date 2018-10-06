@@ -47608,7 +47608,7 @@ exports = module.exports = __webpack_require__(49)(false);
 
 
 // module
-exports.push([module.i, "\n.fretboard[data-v-c1f6bc88] {\n  background: #2b2623;\n  background: -webkit-gradient(linear, left bottom, left top, from(#2b2623), color-stop(50%, #3c312a), to(#2b2623));\n  background: linear-gradient(0deg, #2b2623 0%, #3c312a 50%, #2b2623 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\"#2b2623\",endColorstr=\"#2b2623\",GradientType=1);\n  position: relative;\n  height: 125px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-pack: start;\n      -ms-flex-pack: start;\n          justify-content: flex-start;\n  -webkit-box-align: stretch;\n      -ms-flex-align: stretch;\n          align-items: stretch;\n}\n.fretboard__display[data-v-c1f6bc88] {\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-pack: start;\n      -ms-flex-pack: start;\n          justify-content: flex-start;\n  -webkit-box-align: stretch;\n      -ms-flex-align: stretch;\n          align-items: stretch;\n}\n.fretboard__nut[data-v-c1f6bc88] {\n  background: #564c45;\n  width: 50px;\n  border-right: 4px solid #d8d8d8;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.fretboard__fret[data-v-c1f6bc88] {\n  border-right: 2px solid #564c45;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -ms-flex-pack: distribute;\n      justify-content: space-around;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.fretboard__fret[data-v-c1f6bc88]:last-of-type {\n    border-right: none;\n}\n.fretboard__dot[data-v-c1f6bc88] {\n  width: 20px;\n  height: 20px;\n  border-radius: 100px;\n  background: #d6bc93;\n  /* potentially replace with abalone pattern */\n}\n", ""]);
+exports.push([module.i, "\n.fretboard[data-v-c1f6bc88] {\n  background: #2b2623;\n  background: -webkit-gradient(linear, left bottom, left top, from(#2b2623), color-stop(50%, #3c312a), to(#2b2623));\n  background: linear-gradient(0deg, #2b2623 0%, #3c312a 50%, #2b2623 100%);\n  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=\"#2b2623\",endColorstr=\"#2b2623\",GradientType=1);\n  position: relative;\n  height: 125px;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-pack: start;\n      -ms-flex-pack: start;\n          justify-content: flex-start;\n  -webkit-box-align: stretch;\n      -ms-flex-align: stretch;\n          align-items: stretch;\n}\n.fretboard__display[data-v-c1f6bc88] {\n  width: 100%;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-pack: start;\n      -ms-flex-pack: start;\n          justify-content: flex-start;\n  -webkit-box-align: stretch;\n      -ms-flex-align: stretch;\n          align-items: stretch;\n}\n.fretboard__nut[data-v-c1f6bc88] {\n  background: #564c45;\n  border-right: 4px solid #d8d8d8;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.fretboard__fret[data-v-c1f6bc88] {\n  border-right: 2px solid #564c45;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -ms-flex-pack: distribute;\n      justify-content: space-around;\n  -webkit-box-align: center;\n      -ms-flex-align: center;\n          align-items: center;\n}\n.fretboard__fret[data-v-c1f6bc88]:last-of-type {\n    border-right: none;\n}\n.fretboard__dot[data-v-c1f6bc88] {\n  width: 20px;\n  height: 20px;\n  border-radius: 100px;\n  background: #d6bc93;\n  /* potentially replace with abalone pattern */\n}\n", ""]);
 
 // exports
 
@@ -47654,7 +47654,6 @@ module.exports = function listToStyles (parentId, list) {
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_StringInterface_vue__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_StringInterface_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__components_StringInterface_vue__);
-//
 //
 //
 //
@@ -47873,7 +47872,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "fretboard__display" }, [
-      _c("div", { staticClass: "fretboard__nut" }),
+      _c("div", { staticClass: "fretboard__nut fret-0" }),
       _vm._v(" "),
       _c(
         "div",
@@ -48042,13 +48041,600 @@ exports = module.exports = __webpack_require__(49)(false);
 
 
 // module
-exports.push([module.i, "\n.string-interface__fret[data-v-6076688d] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: start;\n      -ms-flex-pack: start;\n          justify-content: flex-start;\n  -webkit-box-align: stretch;\n      -ms-flex-align: stretch;\n          align-items: stretch;\n}\n.string-interface__string[data-v-6076688d] {\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  background: purple;\n  opacity: 0;\n  margin: 2px 0;\n}\n", ""]);
+exports.push([module.i, "\n.string-interface[data-v-6076688d] {\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: horizontal;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: row;\n          flex-direction: row;\n  -webkit-box-pack: start;\n      -ms-flex-pack: start;\n          justify-content: flex-start;\n  -webkit-box-align: stretch;\n      -ms-flex-align: stretch;\n          align-items: stretch;\n}\n.string-interface__fret[data-v-6076688d] {\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-box-orient: vertical;\n  -webkit-box-direction: normal;\n      -ms-flex-direction: column;\n          flex-direction: column;\n  -webkit-box-pack: start;\n      -ms-flex-pack: start;\n          justify-content: flex-start;\n  -webkit-box-align: stretch;\n      -ms-flex-align: stretch;\n          align-items: stretch;\n}\n.string-interface__fret[data-v-6076688d]:first-child {\n    margin-bottom: 5px;\n}\n.string-interface__fret[data-v-6076688d]:last-child {\n    margin-bottom: 5px;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 /* 60 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__String_vue__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__String_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__String_vue__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    components: {
+        String: __WEBPACK_IMPORTED_MODULE_0__String_vue___default.a
+    },
+
+    mounted: function mounted() {
+        console.log('StringInterface mounted.');
+    }
+});
+
+/***/ }),
+/* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "string-interface" }, [
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-0" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-1" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-2" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-3" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-4" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-5" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-6" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-7" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-8" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-9" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-10" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-11" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-12" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-13" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-14" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-15" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-16" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-17" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-18" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "string-interface__fret fret-19" },
+      [
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string"),
+        _vm._v(" "),
+        _c("string")
+      ],
+      1
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-6076688d", module.exports)
+  }
+}
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(63)
+}
+var normalizeComponent = __webpack_require__(12)
+/* script */
+var __vue_script__ = __webpack_require__(65)
+/* template */
+var __vue_template__ = __webpack_require__(66)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = "data-v-1cbc9dbc"
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/js/components/String.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-1cbc9dbc", Component.options)
+  } else {
+    hotAPI.reload("data-v-1cbc9dbc", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 63 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(64);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(11)("52e8aec3", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1cbc9dbc\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./String.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-1cbc9dbc\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/sass-loader/lib/loader.js!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./String.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 64 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(49)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.string[data-v-1cbc9dbc] {\n  -webkit-box-flex: 1;\n      -ms-flex-positive: 1;\n          flex-grow: 1;\n  background: purple;\n  opacity: 0;\n  margin: 2px 0;\n}\n.string[data-v-1cbc9dbc]:hover {\n    opacity: 5;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 65 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -48072,363 +48658,30 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
-        console.log('Component mounted.');
+        console.log('String mounted.');
     }
 });
 
 /***/ }),
-/* 61 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "string" })
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "string-interface" }, [
-      _c("div", { staticClass: "string-interface__fret-0" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-1" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-2" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-3" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-4" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-5" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-6" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-7" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-8" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-9" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-10" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-11" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-12" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-13" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-14" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-15" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-16" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-17" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-18" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "string-interface__fret fret-19" }, [
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "string-interface__string" })
-      ])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-6076688d", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-1cbc9dbc", module.exports)
   }
 }
 

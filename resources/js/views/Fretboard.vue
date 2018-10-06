@@ -3,7 +3,7 @@
 
         <!-- Displays the fretboard background (no functionality)-->
         <div class="fretboard__display">
-            <div class="fretboard__nut"></div>
+            <div class="fretboard__nut fret-0"></div>
             <div class="d-flex flex-row justify-content-start align-items-stretch w-100">
                 <div class="fretboard__fret fret-1"></div>
                 <div class="fretboard__fret fret-2"></div>
@@ -71,7 +71,6 @@
 
     .fretboard__nut {
         background: #564c45;
-        width: 50px;
         border-right: 4px solid #d8d8d8;
         box-sizing: border-box;
     }
