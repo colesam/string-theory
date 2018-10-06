@@ -21,12 +21,17 @@
                 <div class="col-12">
                     <h1>String Theory</h1>
 
-                    <div class="fretboard-container">
-                        <div id="app">
-                            <scales></scales>
-                            <mandolin-fretboard></mandolin-fretboard>
+                    <div id="app">
+                        <div class="row">
+                            <div class="col-12 control-container">
+                                <scales-module></scales-module>
+                            </div>
+                            <div class="col-12 fretboard-container">
+                                <mandolin-fretboard></mandolin-fretboard>
+                            </div>
                         </div>
                     </div>
+
                 </div>
             </div>
             

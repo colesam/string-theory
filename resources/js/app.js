@@ -32,7 +32,8 @@ if (Laravel.csrfToken) {
 import store from './store';
 
 // Views
-Vue.component('mandolin-fretboard', require('./views/MandolinFretboard.vue'));
+Vue.component('mandolin-fretboard', require('./fretboards/MandolinFretboard'));
+Vue.component('scales-module', require('./modules/ScalesModule'));
 
 const app = new Vue({
     store,
