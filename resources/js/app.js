@@ -16,10 +16,10 @@ window.Vue = require('vue');
  */
 
 // Views
-Vue.component('app', require('./views/App.vue'));
+Vue.component('fretboard', require('./views/Fretboard.vue'));
 
 // Components
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+Vue.component('string-interface', require('./components/StringInterface.vue'));
 
 const app = new Vue({
     el: '#app'
