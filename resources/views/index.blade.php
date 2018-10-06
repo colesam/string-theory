@@ -19,10 +19,11 @@
 
             <div class="row justify-content-center">
                 <div class="col-12">
-                    <h1>Laravel-Vue Boilerplate</h1>
+                    <h1>String Theory</h1>
 
                     <div class="fretboard-container">
                         <div id="app">
+                            <scales></scales>
                             <mandolin-fretboard></mandolin-fretboard>
                         </div>
                     </div>

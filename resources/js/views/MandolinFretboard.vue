@@ -104,12 +104,6 @@
             NoteInterface
         },
 
-        data() {
-            return {
-                openTuning: ['E', 'A', 'D', 'G']
-            }
-        },
-
 		mounted() {
             console.log('App component mounted.');
         }

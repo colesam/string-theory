@@ -1,124 +1,124 @@
 <template>
     <div class="note-interface">
         <div class="note-interface__fret fret-0">
-            <note v-bind:fret="0" v-bind:note="0" />
-            <note v-bind:fret="0" v-bind:note="1" />
-            <note v-bind:fret="0" v-bind:note="2" />
-            <note v-bind:fret="0" v-bind:note="3" />
+            <note v-bind:fretIndex="0" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="0" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="0" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="0" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-1">
-            <note v-bind:fret="1" v-bind:note="0" />
-            <note v-bind:fret="1" v-bind:note="1" />
-            <note v-bind:fret="1" v-bind:note="2" />
-            <note v-bind:fret="1" v-bind:note="3" />
+            <note v-bind:fretIndex="1" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="1" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="1" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="1" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-2">
-            <note v-bind:fret="2" v-bind:note="0" />
-            <note v-bind:fret="2" v-bind:note="1" />
-            <note v-bind:fret="2" v-bind:note="2" />
-            <note v-bind:fret="2" v-bind:note="3" />
+            <note v-bind:fretIndex="2" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="2" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="2" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="2" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-3">
-            <note v-bind:fret="3" v-bind:note="0" />
-            <note v-bind:fret="3" v-bind:note="1" />
-            <note v-bind:fret="3" v-bind:note="2" />
-            <note v-bind:fret="3" v-bind:note="3" />
+            <note v-bind:fretIndex="3" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="3" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="3" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="3" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-4">
-            <note v-bind:fret="4" v-bind:note="0" />
-            <note v-bind:fret="4" v-bind:note="1" />
-            <note v-bind:fret="4" v-bind:note="2" />
-            <note v-bind:fret="4" v-bind:note="3" />
+            <note v-bind:fretIndex="4" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="4" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="4" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="4" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-5">
-            <note v-bind:fret="5" v-bind:note="0" />
-            <note v-bind:fret="5" v-bind:note="1" />
-            <note v-bind:fret="5" v-bind:note="2" />
-            <note v-bind:fret="5" v-bind:note="3" />
+            <note v-bind:fretIndex="5" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="5" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="5" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="5" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-6">
-            <note v-bind:fret="6" v-bind:note="0" />
-            <note v-bind:fret="6" v-bind:note="1" />
-            <note v-bind:fret="6" v-bind:note="2" />
-            <note v-bind:fret="6" v-bind:note="3" />
+            <note v-bind:fretIndex="6" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="6" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="6" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="6" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-7">
-            <note v-bind:fret="7" v-bind:note="0" />
-            <note v-bind:fret="7" v-bind:note="1" />
-            <note v-bind:fret="7" v-bind:note="2" />
-            <note v-bind:fret="7" v-bind:note="3" />
+            <note v-bind:fretIndex="7" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="7" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="7" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="7" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-8">
-            <note v-bind:fret="8" v-bind:note="0" />
-            <note v-bind:fret="8" v-bind:note="1" />
-            <note v-bind:fret="8" v-bind:note="2" />
-            <note v-bind:fret="8" v-bind:note="3" />
+            <note v-bind:fretIndex="8" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="8" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="8" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="8" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-9">
-            <note v-bind:fret="9" v-bind:note="0" />
-            <note v-bind:fret="9" v-bind:note="1" />
-            <note v-bind:fret="9" v-bind:note="2" />
-            <note v-bind:fret="9" v-bind:note="3" />
+            <note v-bind:fretIndex="9" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="9" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="9" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="9" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-10">
-            <note v-bind:fret="10" v-bind:note="0" />
-            <note v-bind:fret="10" v-bind:note="1" />
-            <note v-bind:fret="10" v-bind:note="2" />
-            <note v-bind:fret="10" v-bind:note="3" />
+            <note v-bind:fretIndex="10" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="10" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="10" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="10" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-11">
-            <note v-bind:fret="11" v-bind:note="0" />
-            <note v-bind:fret="11" v-bind:note="1" />
-            <note v-bind:fret="11" v-bind:note="2" />
-            <note v-bind:fret="11" v-bind:note="3" />
+            <note v-bind:fretIndex="11" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="11" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="11" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="11" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-12">
-            <note v-bind:fret="12" v-bind:note="0" />
-            <note v-bind:fret="12" v-bind:note="1" />
-            <note v-bind:fret="12" v-bind:note="2" />
-            <note v-bind:fret="12" v-bind:note="3" />
+            <note v-bind:fretIndex="12" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="12" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="12" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="12" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-13">
-            <note v-bind:fret="13" v-bind:note="0" />
-            <note v-bind:fret="13" v-bind:note="1" />
-            <note v-bind:fret="13" v-bind:note="2" />
-            <note v-bind:fret="13" v-bind:note="3" />
+            <note v-bind:fretIndex="13" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="13" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="13" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="13" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-14">
-            <note v-bind:fret="14" v-bind:note="0" />
-            <note v-bind:fret="14" v-bind:note="1" />
-            <note v-bind:fret="14" v-bind:note="2" />
-            <note v-bind:fret="14" v-bind:note="3" />
+            <note v-bind:fretIndex="14" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="14" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="14" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="14" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-15">
-            <note v-bind:fret="15" v-bind:note="0" />
-            <note v-bind:fret="15" v-bind:note="1" />
-            <note v-bind:fret="15" v-bind:note="2" />
-            <note v-bind:fret="15" v-bind:note="3" />
+            <note v-bind:fretIndex="15" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="15" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="15" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="15" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-16">
-            <note v-bind:fret="16" v-bind:note="0" />
-            <note v-bind:fret="16" v-bind:note="1" />
-            <note v-bind:fret="16" v-bind:note="2" />
-            <note v-bind:fret="16" v-bind:note="3" />
+            <note v-bind:fretIndex="16" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="16" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="16" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="16" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-17">
-            <note v-bind:fret="17" v-bind:note="0" />
-            <note v-bind:fret="17" v-bind:note="1" />
-            <note v-bind:fret="17" v-bind:note="2" />
-            <note v-bind:fret="17" v-bind:note="3" />
+            <note v-bind:fretIndex="17" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="17" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="17" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="17" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-18">
-            <note v-bind:fret="18" v-bind:note="0" />
-            <note v-bind:fret="18" v-bind:note="1" />
-            <note v-bind:fret="18" v-bind:note="2" />
-            <note v-bind:fret="18" v-bind:note="3" />
+            <note v-bind:fretIndex="18" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="18" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="18" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="18" v-bind:noteIndex="3" />
         </div>
         <div class="note-interface__fret fret-19">
-            <note v-bind:fret="19" v-bind:note="0" />
-            <note v-bind:fret="19" v-bind:note="1" />
-            <note v-bind:fret="19" v-bind:note="2" />
-            <note v-bind:fret="19" v-bind:note="3" />
+            <note v-bind:fretIndex="19" v-bind:noteIndex="0" />
+            <note v-bind:fretIndex="19" v-bind:noteIndex="1" />
+            <note v-bind:fretIndex="19" v-bind:noteIndex="2" />
+            <note v-bind:fretIndex="19" v-bind:noteIndex="3" />
         </div>
     </div>
 </template>

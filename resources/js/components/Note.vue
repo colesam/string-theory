@@ -1,7 +1,7 @@
 <template>
-    <div class="note" :class="note" @click="handleClick">
+    <div class="note" :class="'note-' + noteIndex" @click="handleClick">
         <div class="note__name">
-            C#
+            {{ computedNote }}
         </div>
     </div>
 </template>
@@ -42,20 +42,42 @@
 </style>
 
 <script>
+    import {mapGetters} from 'vuex';
+
     export default {
         props: {
-            fret: Number,
-            note: Number
-        },
-
-        mounted() {
-            console.log(`note [${this.fret}, ${this.note}] mounted.`);
+            fretIndex: Number,
+            noteIndex: Number
         },
 
         methods: {
             handleClick: function() {
-                console.log(`Clicked note [${this.fret}, ${this.note}].`);
+                console.log(`Clicked ${this.computedNote}.`);
             }
+        },
+
+        computed: {
+            ...mapGetters([
+                'notePreferences',
+                'openTuning'
+            ]),
+
+            computedNote(state) {
+                let baseNote = this.openTuning[this.noteIndex]; // get the open tuning for this note(0-3)
+
+                let notes = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#'];
+                let startIndex = 0;
+
+                for(let i = 0; i < notes.length; i++) {
+                    if(notes[i] === baseNote) {
+                        startIndex = i;
+                    }
+                }
+
+
+                let note = notes[(startIndex + this.fretIndex) % 12];
+                return this.notePreferences[note];
+            },
         }
     }
 </script>
