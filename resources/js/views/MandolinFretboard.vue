@@ -1,6 +1,5 @@
 <template>
     <div class="fretboard">
-
         <!-- Displays the fretboard background (no functionality)-->
         <div class="fretboard__display">
             <div class="fretboard__nut fret-0"></div>
@@ -40,7 +39,7 @@
             </div>
         </div>
 
-        <string-interface></string-interface>
+        <note-interface />
     </div>
 
 </template>
@@ -54,7 +53,8 @@
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b2623",endColorstr="#2b2623",GradientType=1);
 
         position: relative;
-        height: 125px;
+        height: 150px;
+        width: 1200px;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -97,15 +97,21 @@
 </style>
 
 <script>
-    import StringInterface from '../components/StringInterface.vue';
+    import NoteInterface from '../components/NoteInterface.vue';
 
 	export default {
         components: {
-            StringInterface
+            NoteInterface
+        },
+
+        data() {
+            return {
+                openTuning: ['E', 'A', 'D', 'G']
+            }
         },
 
 		mounted() {
-            console.log('App component mounted.')
+            console.log('App component mounted.');
         }
 	}
 </script>

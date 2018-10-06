@@ -23,7 +23,7 @@
 
                     <div class="fretboard-container">
                         <div id="app">
-                            <fretboard></fretboard>
+                            <mandolin-fretboard></mandolin-fretboard>
                         </div>
                     </div>
                 </div>

@@ -16,10 +16,7 @@ window.Vue = require('vue');
  */
 
 // Views
-Vue.component('fretboard', require('./views/Fretboard.vue'));
-
-// Components
-Vue.component('string-interface', require('./components/StringInterface.vue'));
+Vue.component('mandolin-fretboard', require('./views/MandolinFretboard.vue'));
 
 const app = new Vue({
     el: '#app'
