@@ -6,21 +6,22 @@ Vue.use(Vuex);
 export default new Vuex.Store({
 
     state: {
-        activeNotes: ['G', 'B', 'D'],
-        root: 'G',
-        third: 'B',
-        minorThird: null,
-        fifth: 'D',
+        activeNotes: ['G', 'A'],
+
+        activeRoot: 'G',
 
         scaleTemplates: {
-            ionian:     [2, 2, 1, 2, 2, 2],
-            dorian:     [2, 1, 2, 2, 2, 1],
-            phrygian:   [1, 2, 2, 2, 1, 2],
-            lydian:     [2, 2, 2, 1, 2, 1],
-            mixolydian: [2, 2, 1, 2, 1, 2],
-            aeolian:    [2, 1, 2, 1, 2, 2],
-            locrian:    [1, 2, 1, 2, 2, 2]
+            ionian:     [2, 4, 5, 7, 9, 11],
+            dorian:     [2, 3, 5, 7, 9, 10],
+            phrygian:   [1, 3, 5, 7, 8, 10],
+            lydian:     [2, 4, 6, 7, 9, 10],
+            mixolydian: [2, 4, 5, 7, 9, 10],
+            aeolian:    [2, 3, 5, 7, 8, 10],
+            locrian:    [1, 3, 5, 6, 8, 10],
+            arp_minor:  [3, 7, 10]
         },
+
+        notes: ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#'],
 
         notePreferences: {
             'A':    'A',
@@ -49,24 +50,30 @@ export default new Vuex.Store({
             return state.activeNotes;
         },
 
-        root(state) {
-            return state.root;
+        activeRoot(state) {
+            return state.activeRoot;
         },
 
-        third(state) {
-            return state.third;
-        },
+        activeRootIndex(state) {
+            if(!state.activeRoot) {
+                return false;
+            }
 
-        minorThird(state) {
-            return state.minorThird;
-        },
+            for(let i = 0; i < state.notes.length; i++) {
+                if(state.notes[i] === state.activeRoot) {
+                    return i;
+                }
+            }
 
-        fifth(state) {
-            return state.fifth;
+            return false;
         },
 
         notePreferences(state) {
             return state.notePreferences;
+        },
+
+        notes(state) {
+            return state.notes;
         },
 
         openTuning(state) {
@@ -80,33 +87,21 @@ export default new Vuex.Store({
         },
 
 
-        // Notes Mutators
+        // Notes Mutations
         RESET_NOTES(state) {
-            state.activeNotes = [];
-            state.root = null;
-            state.third = null;
-            state.minorThird = null;
-            state.fifth = null;
+            state.activeNotes       = [];
+            state.activeRoot        = null;
+            state.activeThird       = null;
+            state.activeMinorThird  = null;
+            state.activeFifth       = null;
         },
 
         SET_ACTIVE_NOTES(state, notesArray) {
             state.activeNotes = notesArray;
         },
 
-        SET_ROOT_NOTE(state, note) {
-            state.root = note;
-        },
-
-        SET_THIRD_NOTE(state, note) {
-            state.third = note;
-        },
-
-        SET_MINOR_THIRD_NOTE(state, note) {
-            state.minorThird = note;
-        },
-
-        SET_FIFTH_NOTE(state, note) {
-            state.fifth = note;
+        SET_ACTIVE_ROOT(state, note) {
+            state.activeRoot = note;
         }
     },
 
@@ -125,20 +120,8 @@ export default new Vuex.Store({
             context.commit('SET_ACTIVE_NOTES', notesArray);
         },
 
-        setRootNote(context, note) {
-            context.commit('SET_ROOT_NOTE', note);
-        },
-
-        setThirdNote(context, note) {
-            context.commit('SET_THIRD_NOTE', note);
-        },
-
-        setMinorThirdNote(context, note) {
-            context.commit('SET_MINOR_THIRD_NOTE', note);
-        },
-
-        setFifthNote(context, note) {
-            context.commit('SET_FIFTH_NOTE', note);
+        setActiveRoot(context, note) {
+            context.commit('SET_ACTIVE_ROOT', note);
         }
     }
 

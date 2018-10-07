@@ -1,7 +1,7 @@
 <template>
-    <div class="note" :class="{ active: isActive }" @click="handleClick">
+    <div class="note" :class="{ active: isActive }">
         <div :class="noteClassList()">
-            {{ computedNote.displayNote }}
+            {{ computedNote }}
         </div>
     </div>
 </template>
@@ -38,9 +38,9 @@
         width: 30px;
         height: 30px;
         border-radius: 50px;
-        border: 2px solid lightgray;
+        border: 2px solid #704D35;
         box-sizing: border-box;
-        background: gray;
+        background: #493223;
         color: white;
     }
 
@@ -78,7 +78,7 @@
 </style>
 
 <script>
-    import {mapGetters} from 'vuex';
+    import { mapGetters } from 'vuex';
 
     export default {
         props: {
@@ -87,10 +87,6 @@
         },
 
         methods: {
-            handleClick() {
-                console.log(`Clicked ${this.computedNote}.`);
-            },
-
             noteClassList() {
                 let classes = 'note__name';
 
@@ -113,16 +109,14 @@
                 'notePreferences',
                 'openTuning',
                 'activeNotes',
-                'root',
-                'third',
-                'minorThird',
-                'fifth'
+                'activeRoot',
+                'activeRootIndex',
+                'notes'
             ]),
 
             computedNote() {
                 let baseNote = this.openTuning[this.noteIndex]; // get the open tuning for this note(0-3)
-
-                let notes = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#'];
+                let notes = this.notes;
                 let startIndex = 0;
 
                 for(let i = 0; i < notes.length; i++) {
@@ -131,33 +125,43 @@
                     }
                 }
 
+                return notes[(startIndex + this.fretIndex) % 12];
+            },
 
-                let note = notes[(startIndex + this.fretIndex) % 12];
-                return {
-                    note: note,
-                    displayNote: this.notePreferences[note]
-                };
+            computedNotePreferred() {
+                return this.notePreferences[this.computedNote];
             },
 
             isActive() {
-                return this.activeNotes.includes(this.computedNote.note);
+                return this.activeNotes.includes(this.computedNote);
             },
 
             isRoot() {
-                console.log(this.root + ' ' + this.computedNote.note);
-                return this.root === this.computedNote.note;
+                return (this.computedNote === this.activeRoot);
             },
 
             isThird() {
-                return this.third === this.computedNote.note;
+                // Major Thirds are 4 semi-tones from the root
+                let notes = this.notes;
+                let third = notes[(this.activeRootIndex + 4) % 12];
+
+                return (this.computedNote === third);
             },
 
             isMinorThird() {
-                return this.minorThird === this.computedNote.note;
+                // Minor Thirds are 3 semi-tones from the root
+                let notes = this.notes;
+                let minorThird = notes[(this.activeRootIndex + 3) % 12];
+
+                return (this.computedNote === minorThird);
             },
 
             isFifth() {
-                return this.fifth === this.computedNote.note;
+                // Fifths are 7 semi-tones from the root
+                let notes = this.notes;
+                let fifth = notes[(this.activeRootIndex + 7) % 12];
+
+                return (this.computedNote === fifth);
             }
         }
     }
